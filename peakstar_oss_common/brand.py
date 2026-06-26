@@ -8,7 +8,7 @@ from __future__ import annotations
 
 # 燈號顏色與嚴重度顏色
 LIGHT_COLOR = {"green": "#2E7D32", "yellow": "#E07B39", "red": "#C62828"}
-SEV_COLOR = {"high": "#C62828", "medium": "#E07B39", "low": "#3B5EA6"}
+SEV_COLOR = {"critical": "#7B0000", "high": "#C62828", "medium": "#E07B39", "low": "#3B5EA6"}
 
 # 共用預設燈號門檻（各工具可於建立 ReportDoc 時覆寫，例如安全工具採較嚴門檻）
 DEFAULT_GREEN_MIN = 80
