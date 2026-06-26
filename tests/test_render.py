@@ -67,7 +67,9 @@ class TestHtml(unittest.TestCase):
         self.assertIn("https://www.peakstargroup.com/?ref=exampletool", self.html)
 
     def test_brand_color_present(self):
-        self.assertIn("#0D1F3C", self.html)
+        # 品牌色：深藍綠標題 #22577A、teal accent #43B2A1
+        self.assertIn("#22577A", self.html)
+        self.assertIn("#43B2A1", self.html)
 
     def test_no_findings_fallback(self):
         html = render.to_html(_doc(findings=[]))
